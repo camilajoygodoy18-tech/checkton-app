@@ -1,0 +1,7 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>

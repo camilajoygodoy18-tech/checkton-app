@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: checkton-app
+    env: php
+    buildCommand: php -v
+    startCommand: php -S 0.0.0.0:$PORT -t .
+    plan: free
+    branch: main
+    phpVersion: "8.2"

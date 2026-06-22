@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["php83", "php83Extensions.pdo_mysql", "php83Extensions.mysqli", "php83Extensions.curl"]
+nixPkgs = ["php83", "php83Extensions.pdo_mysql", "php83Extensions.mysqli", "php83Extensions.curl", "php83Extensions.session"]
 
 [phases.install]
 cmds = ["echo 'PHP Ready'"]
@@ -8,4 +8,4 @@ cmds = ["echo 'PHP Ready'"]
 cmd = "php -S 0.0.0.0:8080 -t ."
 
 [metadata]
-watch = ["*.php", "templates/"]
+watch = ["*.php"]
